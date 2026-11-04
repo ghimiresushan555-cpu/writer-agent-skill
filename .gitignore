@@ -1,0 +1,21 @@
+# Local channel config and drafts — uncomment if you'd rather not commit your own writing
+# channel/channel.yaml
+# drafts/
+# published/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Installed skill copies (see `make install`)
+.claude/skills/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
