@@ -1,0 +1,84 @@
+# channel.example.yaml — copy to channel/channel.yaml and replace everything.
+# `channel-strategy` produces this file; every other skill reads it and refuses
+# to invent missing fields. Keep the keys, change the values.
+
+name: "The Margin Note"
+tagline: "One useful thing you can do Monday, every Tuesday."
+url: "https://example.com"
+since: 2026
+
+audience:
+  who: "operators at 10–200 person climate-tech startups, usually the second or third PM hire"
+  they_want:
+    - "to sell into utilities without a 12-month pilot"
+    - "language for explaining hardware margins to software investors"
+    - "to know which dead end we already walked down"
+  they_struggle_with:
+    - "procurement cycles that outlast their runway"
+    - "translating engineering progress into commercial proof"
+  already_know:
+    - "how a SaaS funnel works"
+    - "basic unit economics"
+  reading_context: "phone, Tuesday morning, 4–6 minutes, between two meetings"
+  sophistication: "practitioner — no need to define LCOE or gross margin"
+
+positioning:
+  promise: "Every issue ends with one thing you can do this week, backed by someone who already tried it."
+  point_of_view: "Climate hardware companies fail on commercial execution far more often than on engineering."
+  proof:
+    - "we've run procurement at two utilities"
+    - "we've shipped 40 issues with named operators on the record"
+  not_this: "not a news digest, not a funding-round tracker, not a cheerleader"
+
+pillars:
+  - name: "Procurement, decoded"
+    promise: "The actual steps, documents, and people between a pilot and a PO."
+    share: 0.4
+  - name: "Margins and money"
+    promise: "How hardware economics look once the grant money stops."
+    share: 0.3
+  - name: "Post-mortems"
+    promise: "Named dead ends, with the cost and the lesson."
+    share: 0.2
+  - name: "Field notes"
+    promise: "Short, first-hand observations from site visits and factory floors."
+    share: 0.1
+
+cadence:
+  primary_format: "newsletter essay"
+  publish_day: "Tuesday"
+  frequency: "weekly"
+  target_words: 1200
+  min_words: 900
+  max_words: 1400
+  lead_time_days: 6
+
+voice:
+  person: "first-person plural"
+  reading_level: 9
+  mean_sentence_words: 16
+  contractions: "always"
+  humour: "dry, max one aside per section"
+  jargon: "domain terms fine; define anything a new PM wouldn't know"
+  adjectives: ["direct", "specific", "unshowy", "willing to name the trade-off", "dry"]
+  banned_words: ["leverage", "unlock", "journey", "ecosystem", "game-changer", "delve", "landscape"]
+  banned_openers: ["In today's", "As we enter", "Have you ever wondered"]
+
+surfaces:
+  - name: "newsletter"
+    role: "primary"
+    limits: {words: 1400, links: 12}
+  - name: "blog"
+    role: "canonical archive"
+    limits: {words: 2000}
+  - name: "linkedin"
+    role: "distribution"
+    limits: {characters: 1300, hashtags: 0}
+  - name: "x"
+    role: "distribution"
+    limits: {characters: 280, thread_max: 7}
+
+constraints:
+  sourcing: "every number needs a named source and a date; first-hand counts, anonymous doesn't"
+  disclosure: "any company we advise gets a line at the top"
+  corrections: "top of the next issue, plain language, dated"
